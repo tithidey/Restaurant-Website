@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Slabo+27px&family=Style+Script&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ddd;
+}
+header{
+    font-family: 'Otomanopee One', sans-serif;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0.9;
+    
+}
+header > h1{
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+
+/*container*/
+.container{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    position: relative;
+}
+.container .main_box{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: black;
+
+}
+.container .second_box{
+    width: 50%;
+}
+.container .second_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container *{
+    z-index: 1;
+}
+.container h3{
+    padding: 20px;
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #ddd;
+    
+}
+.container p{
+    /* padding: 30px 230px; */
+    justify-content: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color:#ddd;
+}
+/*showcase*/
+.showcase{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.showcase .box{
+    width: 32%;
+    padding: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: #ddd;
+    transition: all 2s ease-in-out;
+}
+.showcase .box:hover{
+    transform:scale(1.5);
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+}
+
+.showcase .box > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*menu*/
+.menu{
+    width: 100%;
+    height: 120vh;
+    margin-bottom: 200px;
+}
+.menu h1{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 10px 0;
+    text-shadow: 4px 4px  wheat;
+}
+.food_section{
+    display: flex;
+}
+
+.main_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+    box-shadow: 5px 5px 2px skyblue;
+}
+.main_menu .food{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+.main_menu .food input{
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+.main_menu .food .price{
+    display: inline;
+    outline: none;
+    width: 25%;
+}
+.main_menu .food p{
+    padding: 5px;
+}
+.main_menu .food img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid silver;
+}
+
+.menu2{
+    line-height: 1.5rem;
+    width: 50%;
+    height: 100%;
+
+}
+.menu2 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    padding: 9px;
+    font-size: 10px;
+    background: burlywood;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333;
+    font-size: 15px;
+}
+
+
+/*order section (order.html)*/
+.header1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Style Script', cursive;
+}
+h4, p{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+.description{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.description .images{
+    width: 30%;
+    height: 100%;
+}
+.description .images img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
+.description .order-section{
+    width: 40%;
+    height: 100%;
+}
+label{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+#name, #address{
+    text-align: center;
+    padding: 10px;
+    margin-left: 180px;
+    width: 45%;
+    border: none;
+    background: silver;
+    border-radius: 10px;
+}
+
+#person{
+    width: 10%;
+    padding: 10px;
+    border: none;
+    background: silver;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#person:focus, #name:focus, #address:focus{
+    outline: none;
+    box-shadow: 2px 2px 3px #333;
+}
+
+#increase_value .plus_btn,
+#increase_value .minus_btn{
+    padding: 7px 15px;
+    background:slategray;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 3px 0 3px;
+    border-radius: 10px;
+}
+
+#confirm_button{
+    background: slategray;
+    color: #fff;
+    padding: 15px;
+    margin-left: 250px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .location{
+    width: 50%;
+    text-align: center;
+}
+footer .icons{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+
+}
+footer .about{
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
